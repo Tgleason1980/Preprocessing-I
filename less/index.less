@@ -146,10 +146,28 @@ body {
 }
 
 /* variables */
-
-
+@color: blue;
+.flex() {
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+.h2(){
+    font-weight: bold;
+        font-size: 1.5rem;
+        color: @color;
+}
 
 /* less */
+.main-container {
+    margin: 0px 50px;
+    line-height: 25px;
+    h2{
+    .h2;
+    }
+
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -159,6 +177,7 @@ header {
         font-weight: bold;
         font-size: 2rem;
         padding-top: 1rem;
+        color: @color;
     }
 }
 
@@ -168,20 +187,24 @@ nav {
     a {
         text-decoration: none;
         padding: 1.5rem 4rem;
-        color: blue;
+        color: @color;
     }
 }
 
 .section-hireMe {
-    display: flex;
-    justify-content: space-between;
-
+    .flex;
     .hireMe {
         width: 500px;
+        margin-left: 25px;
     }
 
     h2 {
         font-weight: bold;
         font-size: 1.5rem;
+        color: @color;
+    }
+
+    .skills {
+        margin-right: 25px;
     }
 }

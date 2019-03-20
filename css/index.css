@@ -136,6 +136,15 @@ body {
 }
 /* variables */
 /* less */
+.main-container {
+  margin: 0px 50px;
+  line-height: 25px;
+}
+.main-container h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: blue;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -145,6 +154,7 @@ header h1 {
   font-weight: bold;
   font-size: 2rem;
   padding-top: 1rem;
+  color: blue;
 }
 nav {
   display: flex;
@@ -157,11 +167,17 @@ nav a {
 .section-hireMe {
   display: flex;
   justify-content: space-between;
+  justify-content: space-around;
 }
 .section-hireMe .hireMe {
   width: 500px;
+  margin-left: 25px;
 }
 .section-hireMe h2 {
   font-weight: bold;
   font-size: 1.5rem;
+  color: blue;
+}
+.section-hireMe .skills {
+  margin-right: 25px;
 }
