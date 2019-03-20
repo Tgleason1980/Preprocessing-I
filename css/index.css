@@ -154,3 +154,14 @@ nav a {
   padding: 1.5rem 4rem;
   color: blue;
 }
+.section-hireMe {
+  display: flex;
+  justify-content: space-between;
+}
+.section-hireMe .hireMe {
+  width: 500px;
+}
+.section-hireMe h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
